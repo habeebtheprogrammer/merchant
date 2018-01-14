@@ -15,6 +15,18 @@ var userSchema = mongoose.Schema({
         required: true,
         trim: true,
     },
+    dob: {
+        type: String,
+    },
+    bio: {
+        type: String,
+    },
+    interest: {
+        type: [{type:String}]
+    },
+    avatar: {
+        type: String,
+    },
     date: {
         type: String,
     }
